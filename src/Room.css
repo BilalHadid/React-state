@@ -1,12 +1,14 @@
-html, body, #root, .room {
-    height: 100%;
-    margin: 0;
-   }
-.lit {
- background-color: white;
- color: black;
+.Day{
+    background-color: bisque;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 660px;
+    color: black;
 }
-.dark {
- background-color: black;
- color: white;
+.Night{
+    background-color: darkslategray;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 665px;
+    color: white;
 }

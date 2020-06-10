@@ -1,12 +1,15 @@
-import React from 'react';
+import React , {useState} from 'react';
 import './App.css';
-import Room from './Room.js'
+import {Room} from './Room.js'
 import './Room.css'
 
+
 function App() {
+
   return (
-    <div className='Room'>
-      <Room></Room>
+    <div className="App">
+      
+      <Room />
     </div>
   );
 }

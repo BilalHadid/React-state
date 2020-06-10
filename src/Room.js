@@ -1,18 +1,14 @@
-import React,{useState} from 'react';
+import React,{useState} from 'react'
+import './Room.css'
 
-
-function Room() {
-  const state = useState(true);
-  const isLit = state[0];
-  const setLit = state[1]; 
-  const [isLit, setLit] = useState(true)
-  return (
-    <div className="Room">
-      This Is my First {isLit? 'lit':'dark'}
-      <br />
-      <button onClick={() => setLit(!isLit)}>flip</button>
-    </div>
-  );
+export function Room(){
+    const [On,setOn] = useState(false)
+    return (
+        <div className={`Day ${On ? 'Night': ''}`}>
+        <h1>HELLO {On? 'DARKMODE':'LITMODE'}</h1>
+        <br />
+        <button className={`btn-primary ${!On ? 'btn-secondary':''}`} onClick={() => setOn(false)} >On</button>
+        <button className={`btn-Dark ${!On ? 'btn-primary':'btn-secondary'}`} onClick={() => setOn(true)}>Off</button>
+        </div>
+    );
 }
-
-export default Room;
